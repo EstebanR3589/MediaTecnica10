@@ -1,0 +1,25 @@
+/******************************************************************************
+NOMBRE: CESAR ESTEBAN BENITES RODRIGUEZ
+FECHA: 22/05/2024
+DESCRIPCION:tony stark , iron man , quiere saber cuanto dinero dede
+tener para comprar x tornillos c/u a $300; pero en la tienda le da
+n descuentos segun cantidad comprada:
+             1 sin descuyento 
+             5 descuento del 30%,
+             10 descuento del 50%
+*******************************************************************************/
+using System;
+class Program {
+    static void Main() 
+    { 
+    
+    Console.WriteLine(Calcularcostotornillos(3));
+    Console.WriteLine(Calcularcostotornillos(6));
+    Console.WriteLine(Calcularcostotornillos(12));
+    }
+    
+    static  Calcularcostotornillos(int cantidadTornillos)
+    {
+        return cantidadTornillos * 300 * (cantidadTornillos < 5 ? 1 : cantidadTornillos < 10 ? 0.7 : 0.5 );
+     }
+    }
