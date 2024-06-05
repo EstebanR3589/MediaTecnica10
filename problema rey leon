@@ -1,0 +1,56 @@
+/*******************************************************************************
+Autor: cesar esteban benites rodriguez 
+Fecha: 2024-06-05
+DescripciC3n: el rey leon:
+    las manadas de la roca del rey estan compitiendo
+    por el control de las tierras de l reino pide al 
+    usuario la fuerza de al menos 5 clanes diferentes
+    y usa estructuras "si"para determinar clasificacio de 
+    fueza
+*******************************************************************************/
+   
+using System;
+class HelloWorld {
+  static void Main() {
+        int fuerzaDeClanes = 0;
+       
+      //bienbenido a la clasificacion de fuerza
+      Console.WriteLine("bienvenido a la clasificacion de fuerza ");
+     
+      // estructura de loop
+        for (int i = 0; i <= 4; i++)
+        {
+         Console.WriteLine("\nporfavor ingrese su fuerza " + i + ",luego de enter ");
+         fuerzaDeClanes =  Int32.Parse(Console.ReadLine());
+         if(fuerzaDeClanes >= 400){
+             if(fuerzaDeClanes <= 450){
+         Console.WriteLine("felicidades eres del clan pumba ");
+          }
+         }
+         if(fuerzaDeClanes >= 520){
+              if(fuerzaDeClanes <= 550){
+         Console.WriteLine("felicidades eres del clan Hienas ");
+          }
+         }
+         if(fuerzaDeClanes >= 630){
+             if(fuerzaDeClanes <= 650){
+         Console.WriteLine("felicidades eres del clan rafiki ");
+          }
+         }
+         if(fuerzaDeClanes >= 860){
+             if(fuerzaDeClanes <= 890){
+         Console.WriteLine("felicidades eres del clan scar ");
+          }
+         }
+         if(fuerzaDeClanes >= 1000){
+             if(fuerzaDeClanes <= 1050){
+         Console.WriteLine("felicidades eres del clan mufasa ");
+          }
+         }
+          else{
+          Console.WriteLine();
+            }
+
+        }
+    }
+} 
