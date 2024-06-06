@@ -1,0 +1,30 @@
+sing System;
+
+class HelloWorld {
+    static void Main() {
+        int juguetesEncontrados = 0;
+       
+        for (int i = 0; i < 4; i++) {
+        Console.WriteLine("Ronda " + (i+1) + ": ¿Dónde deberíamos buscar?, las opciones son: sala, cochera, patio, dormitorio");
+            string ubicacion = (Console.ReadLine());
+         
+            if (ubicacion == "dormitorio" ) {
+                Console.WriteLine("¡Encontramos un juguete en el juguete encontardo fue rex " + ubicacion + "!");
+                juguetesEncontrados++;
+               
+                if (ubicacion == "patio") {
+                Console.WriteLine("¡Encontramos un juguete en el juguete encontardo fue cara de papa " + ubicacion + "!");
+        }       juguetesEncontrados++;
+            }
+            else {
+                Console.WriteLine("No hay juguetes en la " + ubicacion + ".");
+            }
+       
+        }
+       
+       
+      Console.WriteLine("Total de juguetes encontrados: " + juguetesEncontrados);
+       
+    }
+}
+
