@@ -1,0 +1,22 @@
+/******************************************************************************
+CESAR ESTEBAN BENITES RODRIGUEZ
+10/7/24
+DESCRIPCION: un cliente una mini app en consola que imprima frases 
+de forma aleatoria cad que es ejecutado
+*******************************************************************************/
+using System;
+class MiPrimerVector {
+ static void Main() {
+     string[] frases = {
+         "nunca digas nunca",
+         "solo se que quye nadqa se",
+         "la adversidad te hace rewconocerte a ti mismo"
+     };
+     // aleatorio
+     random aleatorio = new random
+     int posicion = aleatorio.next(0,2);
+      
+      //IMPRIMIR FRASE aleatorio
+      Console.WriteLine(frases¨[posicion]);
+ }
+}
