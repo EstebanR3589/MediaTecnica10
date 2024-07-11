@@ -1,0 +1,19 @@
+using System;
+
+class hechizos
+{
+    static void Main(string[]args)
+    {
+        // Definimos un vector (array) de strings para almacenar nombres de hechizos
+        string[] hechizos = {"Expelliarmus","Expecto Patronum","Wingardium Leviosa"};
+
+         for (int i = 0; i < 3; i++)
+         {
+         Console.WriteLine(hechizos[i]);
+        
+        }
+    }
+}
+
+        
+        
